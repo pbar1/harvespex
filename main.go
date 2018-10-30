@@ -18,7 +18,6 @@ import (
 func main() {
 	harvestID := os.Getenv("HARVEST_ACCOUNT_ID")
 	harvestToken := os.Getenv("HARVEST_ACCESS_TOKEN")
-	fmt.Println("debug")
 	timeEntries, err := FetchTimeEntries(harvestID, harvestToken)
 	if err != nil {
 		log.Fatal(err)
@@ -63,7 +62,6 @@ func main() {
 			continue
 		}
 		note := strings.Join(message, "\n")
-		fmt.Println(date, "\n", note)
 	}
 }
 
