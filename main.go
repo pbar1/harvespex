@@ -62,6 +62,7 @@ func main() {
 			continue
 		}
 		note := strings.Join(message, "\n")
+		fmt.Println(date + "\n" + note)
 	}
 }
 
