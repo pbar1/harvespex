@@ -176,3 +176,33 @@ func ParsePushEvent(event *github.Event) (*github.PushEvent, error) {
 	pushEvent, _ := i.(*github.PushEvent)
 	return pushEvent, nil
 }
+
+// func CreateTimeEntry(note string, ) {
+
+// }
+
+// func resolveProjectID(projectName string, accountID string, accessToken string) string {
+// 	ctx := context.Background()
+// 	ts := oauth2.StaticTokenSource(
+// 		&oauth2.Token{
+// 			AccessToken: accessToken,
+// 		},
+// 	)
+// 	tc := oauth2.NewClient(ctx, ts)
+// 	service := harvest.NewHarvestClient(tc)
+// 	service.AccountId = accountID
+
+// 	opt := &harvest.MyProjectAssignmentListOptions{}
+
+// 	assn, resp, err := service.Project.GetMyProjectAssignments(ctx, opt)
+// 	if err != nil {
+// 		log.Fatal(err)
+// 	} else if resp.StatusCode != 200 {
+// 		log.Fatal(err)
+// 	}
+
+// }
+
+// func resolveTaskID(taskName string, accountID string, accessToken string) string {
+
+// }
