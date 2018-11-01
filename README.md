@@ -26,3 +26,5 @@ project_mapping {
 }
 ```
 
+### Build
+`go build`
