@@ -13,7 +13,7 @@ You'll need some environment variables:
 - `HARVEST_ACCESS_TOKEN`
 - `HARVEST_ACCOUNT_ID`
 
-...and you'll also need `harvespex.hcl` in the same directory as the `harvespex binary`. This maps GitHub repositories to Harvest tasks, and looks like so:
+...and you'll also need `harvespex.hcl` in the same directory as the `harvespex` binary. This maps GitHub repositories to Harvest tasks, and looks like so:
 
 ```
 project_mapping {
